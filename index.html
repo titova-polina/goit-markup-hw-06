@@ -353,6 +353,18 @@
 						</li>
 					</ul>
 				</div>
+				<form class="footer-form">
+					<label class="footer-lable" for="id_subscribe">Subscribe</label>
+					<div class="footer-group">
+						<input class="footer-input" type="email" name="subscribe" placeholder="E-mail" id="id_subscribe" />
+						<button class="footer-btn" type="submit">
+							<span class="footer-btn-text">Subscribe</span>
+							<svg class="footer-icon-btn">
+								<use xlink:href="./images/icons.svg#frame"></use>
+							</svg>
+						</button>
+					</div>
+				</form>
 			</div>
 		</footer>
 		<div class="backdrop is-hidden" data-modal>
@@ -362,6 +374,71 @@
 						<use xlink:href="./images/icons.svg#close"></use>
 					</svg>
 				</button>
+				<h2 class="modal-title">Leave your contacts and we will call you back</h2>
+				<form>
+					<ul>
+						<li class="modal-list-item">
+							<div class="form-group">
+								<label class="modal-form" for="id_name">Name</label>
+								<div class="form-control">
+									<input class="form-input" type="text" name="name" id="id_name" required="true" />
+									<svg class="modal-form-icon">
+										<use xlink:href="./images/icons.svg#person"></use>
+									</svg>
+								</div>
+							</div>
+						</li>
+						<li class="modal-list-item">
+							<div class="form-group">
+								<label class="modal-form" for="id_phone">Phone</label>
+								<div class="form-control">
+									<input class="form-input" type="tel" name="phone" id="id_phone" required="true" />
+									<svg class="modal-form-icon">
+										<use xlink:href="./images/icons.svg#phone"></use>
+									</svg>
+								</div>
+							</div>
+						</li>
+						<li class="modal-list-item">
+							<div class="form-group">
+								<label class="modal-form" for="id_email"> Email </label>
+								<div class="form-control">
+									<input class="form-input" type="email" name="email" id="id_email" required="true" />
+									<svg class="modal-form-icon">
+										<use xlink:href="./images/icons.svg#email"></use>
+									</svg>
+								</div>
+							</div>
+						</li>
+						<li class="modal-list-item">
+							<div class="form-group">
+								<label class="modal-form" for="id_comment"> Comment </label>
+								<div class="form-control">
+									<textarea
+										class="form-textarea"
+										placeholder="Text input"
+										id="id_comment"
+										rows="6"
+										name="comment"
+									></textarea>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<label class="form-checkbox">
+						<input type="checkbox" class="checkbox visually-hidden" name="confirm" required="true" />
+						<div class="custom-checkbox">
+							<svg class="check-icon">
+								<use xlink:href="./images/icons.svg#check"></use>
+							</svg>
+						</div>
+						<span class="checkbox-text">I accept the terms and conditions of the </span>
+						<a href="" target="_blank" class="checkbox-link">Privacy Policy</a></label
+					>
+					<div class="form-btn-wrapper">
+						<button class="form-btn" type="submit">Send</button>
+					</div>
+				</form>
 			</div>
 		</div>
 		<script src="./modal.js"></script>
